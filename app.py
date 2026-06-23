@@ -184,7 +184,7 @@ if menu == "Create":
 
 elif menu == "Read":
 
-    st.header("📋 Patient Records")
+    st.header("Patient Records")
 
     df = pd.read_sql_query(
         "SELECT * FROM patients",
@@ -202,7 +202,7 @@ elif menu == "Read":
 
 elif menu == "Update":
 
-    st.header("✏️ Update Patient")
+    st.header("Update Patient")
 
     patient_ids = pd.read_sql_query(
         "SELECT id FROM patients",
@@ -276,7 +276,7 @@ elif menu == "Update":
 
 elif menu == "Delete":
 
-    st.header("🗑️ Delete Patient")
+    st.header("Delete Patient")
 
     patient_ids = pd.read_sql_query(
         "SELECT id FROM patients",
